@@ -1,0 +1,99 @@
+/*SECCION CONTACTO*/
+
+
+.primeraParte p{
+    font-size: 15px;
+}
+
+.sectionFormulario{
+    padding-left: 95px;
+    padding-right: 95px;
+    
+}
+.contactoTitulo{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 80px;
+         margin-bottom: 10px;
+         font-size: 27px;
+}
+.redesSociales{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(197, 104, 158);
+  height: 60px;
+
+   svg{
+      margin: 40px;
+      }
+         
+
+}
+.consultas{
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin-left: 10px;
+
+      h2{
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+}
+.btn{
+    color:black;
+    background-color: rgb(238, 125, 178);
+}
+
+.horarios{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 20px;
+   margin-top: 40px;
+}
+
+/* FOOTER SON SASS*/ 
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+.pieDePagina {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px; 
+    background-color: rgb(179, 110, 147);
+    padding: 20px; 
+    @include sizes(100%,180px);
+
+    p{
+        font-size: 20px 
+    }
+    ul{
+    padding-left: 0rem; 
+      li{
+          list-style: none;
+      }
+      li h2{
+        text-decoration: none;
+        background-color: rgb(236, 195, 221);
+        padding: 25px;
+        font-size: x-large;
+        font-weight: 900;
+    
+        a{
+            text-decoration: none;
+            color: black;
+           font-weight: 900;
+        }
+      }
+
+    }
+}
